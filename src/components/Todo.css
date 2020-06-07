@@ -1,0 +1,59 @@
+.trash {
+  margin: 0 5px;
+  font-size: 15px;
+}
+.trash:hover {
+  font-size: 18px;
+}
+.trash:active {
+  transform: translateY(3px);
+}
+.pencil {
+  font-size: 15px;
+}
+.pencil:hover {
+  font-size: 18px;
+}
+.pencil:active {
+  transform: translateY(3px);
+}
+.list-group-item {
+  background-color: #0063b2ff;
+}
+.completed {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.list {
+  position: relative;
+  animation: dropdown linear forwards 0.1s;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  80% {
+    opacity: 0.9;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.list span {
+  position: absolute;
+  right: 17px;
+  cursor: pointer;
+  top: 13px;
+}
+
+.form-edit input[type="text"] {
+  color: white;
+  background-color: #0063b2ff;
+  border: none;
+}

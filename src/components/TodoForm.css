@@ -1,0 +1,17 @@
+input.form-control:focus {
+  width: 200px;
+  outline: none;
+  box-shadow: none;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
